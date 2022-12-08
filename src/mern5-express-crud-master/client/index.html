@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div>
+        <input type="text" class="text" placeholder="emp id" id="emp_id" />
+      </div>
+      <div>
+        <input type="text" class="text" placeholder="emp name" id="emp_name" />
+      </div>
+      <div>
+        <input
+          type="email"
+          class="text"
+          placeholder="emp email"
+          id="emp_email"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          class="text"
+          placeholder="emp phone"
+          id="emp_phone"
+        />
+      </div>
+      <div>
+        <input type="text" class="text" placeholder="emp exp" id="emp_exp" />
+      </div>
+      <div>
+        <input type="text" class="text" placeholder="emp edu" id="emp_edu" />
+      </div>
+      <div>
+        <input
+          type="radio"
+          class="text"
+          value="male"
+          id="emp_gender"
+          name="emp_gender"
+        />Male
+        <input
+          type="radio"
+          class="text"
+          value="female"
+          id="emp_gender"
+          name="emp_gender"
+        />Female
+      </div>
+      <div>
+        <input type="text" class="text" placeholder="emp city" id="emp_city" />
+      </div>
+
+      <div>
+        <input
+          type="text"
+          class="text"
+          placeholder="emp salary"
+          id="emp_salary"
+        />
+      </div>
+      <div>
+        <select id="emp_skills">
+          <option value="js">Js</option>
+          <option value="java">Java</option>
+          <option value="react">react</option>
+          <option value="nodejs">nodejs</option>
+          <option value="expressjs">expressjs</option>
+        </select>
+      </div>
+      <div>
+        <input
+          type="text"
+          placeholder="emp_designation"
+          id="emp_designation"
+          class="text"
+        />
+      </div>
+      <div>
+        <button>create employee</button>
+      </div>
+    </form>
+
+    <div id="template"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>

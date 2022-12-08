@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #111;
+  color: yellow;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  background-color: yellow;
+  border: 1px solid darkkhaki;
+  border-radius: 4px;
+  padding: 10px 20px;
+}

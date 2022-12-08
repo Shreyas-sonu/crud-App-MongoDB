@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --bg-base-color: #518C92;
+}
+body {
+  background-color: #518C92;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbarBlock {
+  width: 100%;
+  background: var(--bg-base-color);
+  color: #FFE57E;
+  height: 70px;
+}
+
+#navbarBlock > article {
+  height: inherit;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 90%;
+}
+
+.logoBlock a {
+  color: #FFE57E;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.menuBlock nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.menuBlock nav ul li a {
+  color: #FFE57E;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  padding: 10px 20px;
+}
+
+.menuBlock nav ul li a:hover {
+  background-color: #FFE57E;
+  color: #518C92;
+  transition: ease all 0.7s;
+}
+
+.formBlock article {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.formBlock h2 {
+  color: #FFE57E;
+  padding: 10px 0;
+  margin: 10px 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.formBlock form {
+  background: #fff;
+  padding: 20px;
+  width: 400px;
+}
+.formBlock form label {
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.formBlock form input[type="text"],
+.formBlock form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+
+.formBlock form input[type="radio"] {
+  margin: 0 6px;
+}
+
+.formBlock form button {
+  width: 100%;
+  padding: 12px 20px;
+  background: var(--bg-base-color);
+  color: #fff;
+  border: 1px solid var(--bg-base-color);
+  margin: 20px 0;
+  border-radius: 4px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formBlock form button:hover {
+  background: #fff;
+  color: var(--bg-base-color);
+  border: 1px solid var(--bg-base-color);
+}
+
+#empTableBlock article {
+  width: 90%;
+  margin: 10px auto;
+  background-color: #fff;
+  padding: 10px;
+}
+
+#empTableBlock table {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  margin: 10px 0;
+  border-collapse: collapse;
+}
+
+#empTableBlock table thead{
+  background-color: #518C92;
+  color: #FFE57E;
+  height: 10vh;
+  padding: 10px;
+}
+
+td,
+tr,
+th {
+  border-collapse: collapse;
+  padding: 8px;
+  border: 1px solid #eee;
+  text-align: center;
+  font-size: small;
+}
+
+.view_more a,
+.edit_block a,
+.delete_block a {
+  text-decoration: none;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 4px;
+  text-transform: lowercase;
+  border-bottom: 3px solid #363a3c;
+}
+
+.view_more a {
+  background: #607d8b;
+}
+.edit_block a {
+  background-color: darkgoldenrod;
+}
+
+.delete_block button {
+  background-color: crimson;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-transform: lowercase;
+  border: none;
+  cursor: pointer;
+}
+
+.emp_block article {
+  width: 90%;
+  background: #fff;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  height: 70vh;
+}
+
+.emp_block article .sidebar {
+  flex-basis: 25%;
+}
+
+.emp_block article .sidebar figure {
+  width: 100%;
+}
+
+.emp_block article .sidebar figure img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: grayscale(100);
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.emp_block article .mainbar h1 {
+  font-size: 30px;
+  color: #518C92;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 13px;
+}
+
+.emp_block article .mainbar {
+  flex-basis: 75%;
+}
+
+.emp_block article .mainbar p {
+  font-size: 15px;
+  padding: 4px;
+  font-weight: 500;
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+}
+.emp_block article .mainbar p:last-child {
+  border: none;
+}
