@@ -4,8 +4,7 @@ const cors = require("cors");
 const employeeRoute = require("./routes/employee");
 let app = express();
 //connect database
-let URL =
-  "mongodb+srv://Shreyas:sonucena@cluster0.tj3nvvc.mongodb.net/?retryWrites=true&w=majority";
+let URL ="mongodb+srv://Shreyas:sonucena@cluster0.tj3nvvc.mongodb.net/?retryWrites=true&w=majority";
 
 let connectDb = async () => {
   await mongoose.connect(URL);
